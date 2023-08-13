@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <p class="description">This is a password generator that will generate a random password based on user-selected criteria.</p>
+        <h3 class="password-display" id="passwordDisplay">Generate a password.</h3>
+        <p class="passwordGuide">Password is weak. We suggest you increase the number of characters for a stronger password.</p>
+        <form  id = "passwordGeneratorForm"class="form">
+            <label for="characterAmountNumber">Number of Characters</label>
+            <div class="characterAmountContainer">
+                <input type="range" min="1" max="50" value="10" id="characterAmountRange">
+                <input class="number-input" type="number" min="1" max="50" id="characterAmountNumber" value="10">
+    
+        
+            </div>
+         
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+
+            <button class = "btn-password" type="submit">Generate Password</button>
+            
+
+
+        </form>
+        <button class="btn-reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
